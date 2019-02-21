@@ -1,0 +1,38 @@
+*{
+    color: #fff;
+}
+
+.main{
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+/*
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+*/
+}
+
+.a {
+    padding: 100px;
+    background-color: #333;
+    float: left;
+    margin: 0 20px ;
+}
+
+.b {
+    padding: 100px;
+    background-color: #333;
+    float: left;
+    margin: 0 20px ;
+}
+
+.c {
+    padding: 100px;
+    background-color: #333;
+    float: left;
+    margin: 0 20px ;
+}

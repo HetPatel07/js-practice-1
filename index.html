@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="h-100">
+
+    <div class="main">
+        <div class="a">
+            <h1>A</h1>
+        </div>
+        <div class="b">
+            <h1>B</h1>
+        </div>
+        <div class="c">
+            <h1>C</h1>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var item = document.querySelector('.a');
+
+        var child = document.querySelector('.c');
+        item.onclick = function() {
+            var item1 = document.querySelector('.b');
+            item1.innerHTML = "<h1>C</h1>";
+
+            var item2 = document.querySelector('.c');
+            item2.innerHTML = "<h1>B</h1>";
+        }
+        var list = document.querySelector('.b');
+        list.onclick = function() {
+            var list1 = document.querySelector('.a');
+            list1.innerHTML = "<h1>B</h1>";
+
+            var list2 = document.querySelector('.c');
+            list2.innerHTML = "<h1>A</h1>";
+        }
+        child.onclick = function() {
+            var child1 = document.querySelector('.a');
+            child1.innerHTML = "<h1>C</h1>";
+
+            var child2 = document.querySelector('.b');
+            child2.innerHTML = "<h1>B</h1>";
+        }
+    </script>
+
+</body>
+
+</html>
