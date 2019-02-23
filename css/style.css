@@ -20,19 +20,25 @@
     padding: 100px;
     background-color: #333;
     float: left;
-    margin: 0 20px ;
+    margin: 0 20px;
+    cursor: pointer;
+    box-shadow: 0px 6px 20px 1px #333;
 }
 
 .b {
+    cursor: pointer;
     padding: 100px;
     background-color: #333;
     float: left;
-    margin: 0 20px ;
+    margin: 0 20px;
+    box-shadow: 0px 6px 20px 1px #333;
 }
 
 .c {
     padding: 100px;
     background-color: #333;
+    box-shadow: 0px 6px 20px 1px #333;
     float: left;
-    margin: 0 20px ;
+    margin: 0 20px;
+    cursor: pointer; 
 }

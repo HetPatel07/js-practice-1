@@ -13,13 +13,16 @@
 <body class="h-100">
 
     <div class="main">
-        <div class="a">
+        <div class="a text-center" id="hi">
+            <p>Click here</p>
             <h1>A</h1>
         </div>
-        <div class="b">
+        <div class="b text-center">
+            <p>Click here</p>
             <h1>B</h1>
         </div>
-        <div class="c">
+        <div class="c text-center">
+            <p>Click here</p>
             <h1>C</h1>
         </div>
     </div>
@@ -32,31 +35,44 @@
 
 
     <script>
-        var item = document.querySelector('.a');
+        var item = document.getElementsByClassName('a');
 
-        var child = document.querySelector('.c');
-        item.onclick = function() {
-            var item1 = document.querySelector('.b');
-            item1.innerHTML = "<h1>C</h1>";
+        console.log(item);
+        console.log(list);
 
-            var item2 = document.querySelector('.c');
-            item2.innerHTML = "<h1>B</h1>";
+        item[0].onclick = function() {
+
+            console.log(item[0]);
+            var item1 = document.getElementsByClassName('b');
+            item1[0].innerHTML = "<p>Click here</p><h1>C</h1>";
+
+            var item2 = document.getElementsByClassName('c');
+            item2[0].innerHTML = "<p>Click here</p><h1>B</h1>";
         }
-        var list = document.querySelector('.b');
-        list.onclick = function() {
-            var list1 = document.querySelector('.a');
-            list1.innerHTML = "<h1>B</h1>";
 
-            var list2 = document.querySelector('.c');
-            list2.innerHTML = "<h1>A</h1>";
-        }
-        child.onclick = function() {
-            var child1 = document.querySelector('.a');
-            child1.innerHTML = "<h1>C</h1>";
 
-            var child2 = document.querySelector('.b');
-            child2.innerHTML = "<h1>B</h1>";
+        var list = document.getElementsByClassName('b');
+        list[0].onclick = function() {
+            console.log(list[0]);
+            var list1 = document.getElementsByClassName('a');
+            list1[0].innerHTML = "<p>Click here</p><h1>B</h1>";
+
+            var list2 = document.getElementsByClassName('c');
+            list2[0].innerHTML = "<p>Click here</p><h1>A</h1>";
         }
+
+
+        var child = document.getElementsByClassName('c');
+
+        child[0].onclick = function() {
+            console.log(child[0]);
+            var child1 = document.getElementsByClassName('a');
+            child1[0].innerHTML = "<p>Click here</p><h1>C</h1>";
+
+            var child2 = document.getElementsByClassName('b');
+            child2[0].innerHTML = "<p>Click here</p><h1>B</h1>";
+        }
+
     </script>
 
 </body>
